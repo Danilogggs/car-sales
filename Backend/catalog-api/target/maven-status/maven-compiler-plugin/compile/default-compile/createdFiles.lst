@@ -1,0 +1,9 @@
+com\carsales\catalog\service\ProductService.class
+com\carsales\catalog\controller\CategoryController.class
+com\carsales\catalog\repository\CategoryRepository.class
+com\carsales\catalog\service\CategoryService.class
+com\carsales\catalog\domain\Category.class
+com\carsales\CatalogApiApplication.class
+com\carsales\catalog\controller\ProductController.class
+com\carsales\catalog\domain\Product.class
+com\carsales\catalog\repository\ProductRepository.class
