@@ -18,14 +18,13 @@ public class Product {
 
   @NotNull
   @Indexed
-  private String categoryId; // referência lógica para Category
+  private String categoryId;
 
-  // Campos básicos do carro:
   @NotBlank private String brand;
   @NotBlank private String model;
   private String version;
 
-  @NotNull @Min(1886) // primeiro carro “oficial” foi em 1886 :)
+  @NotNull @Min(1886)
   private Integer year;
 
   @NotBlank private String color;
@@ -33,16 +32,15 @@ public class Product {
   @NotNull @Min(0)
   private BigDecimal listedPrice;
 
-  private List<String> photos; // URLs
+  private List<String> photos;
 
-  // status: available|reserved|sold (string simples para facilitar)
+  // status: available|reserved|sold 
   @NotBlank
   private String status = "available";
 
   private Instant createdAt = Instant.now();
   private Instant updatedAt = Instant.now();
 
-  // getters/setters
   public String getId() { return id; }
   public void setId(String id) { this.id = id; }
   public String getCategoryId() { return categoryId; }
